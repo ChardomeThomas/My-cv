@@ -1,3 +1,7 @@
+*{box-sizing: border-box;}
+body{
+  margin: 0;
+}
 .parent {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -9,6 +13,7 @@
 .div1 {
      grid-area: 1 / 1 / 8 / 3;
      background-color:#d0d0d0;
+
  }
 .div2 {
 
@@ -16,38 +21,29 @@
   background-color:#f5f5f5;
 
 }
-.maison{
-  width: 5%;
+.blocparent{
+  padding: 80px 0 0;
+  min-height: calc(100vh - 208.44px);
 }
-.telephone{
-  width: 5%;
-}
-.mail{
-  width: 5%;
-}
-.linkedin{
-  width: 5%;
-}
-.facebook{
-  width: 5%;
-}
-.twitter{
-  width: 5%;
-}
-.discord{
+.iconposition{
   width: 5%;
 }
 
+
 header{
   background-color: grey;
-  height: 120px;
+  padding: 25px 0;
 }
 header h1{
-  text-align: center;
+    text-align: center;
     color: white;
+    margin-bottom: 70px;
 }
 .photo{
-    text-align: center;
+  text-align: center;
+left: 50%;
+position: absolute;
+transform: translateX(-50%);
 }
 .photo img{
     width: 150px;
@@ -58,8 +54,7 @@ header h1{
     margin-top: -80px;
 }
 footer{
-    position:absolute;
-    bottom:0;
+    position:relative;
     height:30px;
     width: 100%;
     background-color: grey;
